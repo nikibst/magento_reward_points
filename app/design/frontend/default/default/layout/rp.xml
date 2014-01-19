@@ -1,0 +1,17 @@
+<layout>
+	<catalog_category_default>
+        <reference name='product_list'>
+            <action method='setTemplate'><template>rp/catalog/product/list.phtml</template></action>
+        </reference>
+    </catalog_category_default>
+    <customer_account_index>
+        <reference name="customer_account_dashboard_info">
+            <action method='setTemplate'><template>rp/customer/account/dashboard/info.phtml</template></action>
+        </reference>
+    </customer_account_index>
+    <checkout_cart_index translate="label">
+        <reference name="checkout.cart.coupon">
+            <action method='setTemplate'><template>rp/checkout/cart/rps.phtml</template></action>
+        </reference>
+    </checkout_cart_index>
+</layout>

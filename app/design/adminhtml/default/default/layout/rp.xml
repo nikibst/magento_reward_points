@@ -1,0 +1,42 @@
+<layout>
+	<adminhtml_customer_edit>
+        <reference name="customer_edit_tab_view">
+            <action method='setTemplate'><template>rp/customer/tab/view.phtml</template></action>
+        </reference>
+    </adminhtml_customer_edit>
+     <adminhtml_sales_order_view>
+        <reference name="order_totals">
+            <block type="adminhtml/sales_order_totals_item" name="invoice_fee" template="rp/sales/order/view/totals.phtml" />
+        </reference>
+    </adminhtml_sales_order_view>
+    <adminhtml_sales_order_invoice_new>
+        <reference name="invoice_totals">
+            <block type="adminhtml/sales_order_totals_item" name="rps_invoice" template="rp/sales/order/view/totals.phtml" />
+        </reference>
+    </adminhtml_sales_order_invoice_new>
+    <adminhtml_sales_order_invoice_updateqty>
+        <reference name="invoice_totals">
+            <block type="adminhtml/sales_order_totals_item" name="rps_updateqty" template="rp/sales/order/view/totals.phtml" />
+        </reference>
+    </adminhtml_sales_order_invoice_updateqty>
+    <adminhtml_sales_order_invoice_view>
+         <reference name="invoice_totals">
+            <block type="adminhtml/sales_order_totals_item" name="rps_invoice_view" template="rp/sales/order/view/totals.phtml" />
+        </reference>
+    </adminhtml_sales_order_invoice_view>
+    <adminhtml_sales_order_creditmemo_new>
+        <reference name="creditmemo_totals">
+            <block type="adminhtml/sales_order_totals_item" name="rps_creditmemo_new" template="rp/sales/order/view/totals.phtml" />
+        </reference>
+    </adminhtml_sales_order_creditmemo_new>
+    <adminhtml_sales_order_creditmemo_updateqty>
+         <reference name="creditmemo_totals">
+            <block type="adminhtml/sales_order_totals_item" name="rps_creditmemo_updateqty" template="rp/sales/order/view/totals.phtml" />
+        </reference>
+    </adminhtml_sales_order_creditmemo_updateqty>
+    <adminhtml_sales_order_creditmemo_view>
+        <reference name="creditmemo_totals">
+            <block type="adminhtml/sales_order_totals_item" name="rps_creditmemo_view" template="rp/sales/order/view/totals.phtml" />
+        </reference>
+    </adminhtml_sales_order_creditmemo_view>
+</layout>

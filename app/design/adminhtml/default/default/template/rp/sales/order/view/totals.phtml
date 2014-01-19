@@ -1,0 +1,8 @@
+<tr>
+    <td class="label"><?php echo $this->__('Reward Points Discount') ?></td>
+    <td class="emph"><?php echo '-' . Mage::helper('core')->currency($this->getOrder()->getRpAmount()) ?></td>
+</tr>
+<tr>
+    <td class="label"><?php echo $this->__('Reward Points Applied') ?></td>
+    <td class="emph"><?php echo ((float)$this->getOrder()->getRpAmount() / (float)Mage::getStoreConfig('rp_options/general_config/reward_points_price')) ?></td>
+</tr>

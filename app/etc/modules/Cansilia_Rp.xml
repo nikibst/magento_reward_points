@@ -1,0 +1,8 @@
+<config>
+	<modules>
+		<Cansilia_Rp>
+			<active>true</active>
+			<codePool>local</codePool>
+		</Cansilia_Rp>
+	</modules>
+</config>

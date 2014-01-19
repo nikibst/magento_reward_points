@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+
+<config>
+	<tabs>
+		<rpconfig translate="label" module="rp">
+            <label>Reward Points</label>
+            <sort_order>250</sort_order>
+        </rpconfig>
+	</tabs>
+	<sections>
+		<rp_options translate="label" module="rp">
+            <label>Reward Points Configuration</label>
+            <tab>rpconfig</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>    
+            <groups>
+            	<general_config translate="label">
+                    <label>General Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>   
+                    <fields>
+                    	<reward_points_price>
+					        <label>Reward Point Price/Value (1 Point)</label>
+					        <frontend_type>text</frontend_type>
+					        <sort_order>10</sort_order>
+					        <show_in_default>1</show_in_default>
+					        <show_in_website>1</show_in_website>
+					        <show_in_store>1</show_in_store>                    
+				    	</reward_points_price>
+                        <reward_points_limit>
+                            <label>Maximum Alloweded Reward Points</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </reward_points_limit>
+                        <reward_can_apply_total>
+                            <label>Customer can Apply Reward Points only if Grand Total is equal to or bigger than</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </reward_can_apply_total>
+                	</fields>             
+                </general_config>
+                <on_products_config translate="label">
+                    <label>On Products</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>   
+                    <fields>
+                    	<on_product_enable>
+					        <label>Enable Reward Points for each Product</label>
+					        <frontend_type>select</frontend_type>
+                            <source_model>rp/adminhtml_config_yesno</source_model>
+					        <sort_order>1</sort_order>
+					        <show_in_default>1</show_in_default>
+					        <show_in_website>1</show_in_website>
+					        <show_in_store>1</show_in_store>                    
+				    	</on_product_enable>
+                	</fields>             
+                </on_products_config>
+                <on_review_config translate="label">
+                    <label>On Product Review</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>   
+                    <fields>
+                    	<on_review_enable>
+					        <label>Enable Reward Points when user writes a review</label>
+					        <frontend_type>select</frontend_type>
+					        <source_model>rp/adminhtml_config_yesno</source_model>
+					        <sort_order>10</sort_order>
+					        <show_in_default>1</show_in_default>
+					        <show_in_website>1</show_in_website>
+					        <show_in_store>1</show_in_store>                    
+				    	</on_review_enable>
+				    	<on_review_reward_points>
+					        <label>Reward Points per Review</label>
+					        <frontend_type>text</frontend_type>
+					        <sort_order>20</sort_order>
+					        <show_in_default>1</show_in_default>
+					        <show_in_website>1</show_in_website>
+					        <show_in_store>1</show_in_store>                    
+				    	</on_review_reward_points>
+                	</fields>             
+                </on_review_config>
+                <on_email_friend translate="label">
+                    <label>On Email to A Friend</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>   
+                    <fields>
+                    	<on_email_enable>
+					        <label>Enable Reward Points when user shares a product with a friend</label>
+					        <frontend_type>select</frontend_type>
+					        <source_model>rp/adminhtml_config_yesno</source_model>
+					        <sort_order>10</sort_order>
+					        <show_in_default>1</show_in_default>
+					        <show_in_website>1</show_in_website>
+					        <show_in_store>1</show_in_store>                    
+				    	</on_email_enable>
+				    	<on_email_reward_points>
+					        <label>Reward Points per E-mail send</label>
+					        <frontend_type>text</frontend_type>
+					        <sort_order>20</sort_order>
+					        <show_in_default>1</show_in_default>
+					        <show_in_website>1</show_in_website>
+					        <show_in_store>1</show_in_store>                    
+				    	</on_email_reward_points>
+                	</fields>             
+                </on_email_friend>
+                <on_customer_register translate="label">
+                    <label>On Customer Register</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>   
+                    <fields>
+                        <on_register_enable>
+                            <label>Enable Reward Points when a new customer registers</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>rp/adminhtml_config_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </on_register_enable>
+                        <on_register_reward_points>
+                            <label>Reward Points amount for customer registration</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                    
+                        </on_register_reward_points>
+                    </fields>             
+                </on_customer_register>
+            </groups>                
+        </rp_options>
+	</sections>
+</config>
